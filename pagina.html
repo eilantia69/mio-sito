@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca Retrò</title>
+    <style>
+        /* Stile generale con colori caldi d'epoca */
+        body {
+            background-color: #f4ebd9; /* Colore carta ingiallita */
+            color: #3e2723; /* Marrone scuro per il testo */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Contenitore principale a effetto pergamena */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fffdf7;
+            padding: 40px;
+            border: 2px solid #8d6e63;
+            box-shadow: 0px 0px 20px rgba(62, 39, 35, 0.2);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        /* Testata decorativa stile giornale antico */
+        header {
+            text-align: center;
+            border-bottom: 3px double #5d4037;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #5d4037;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #795548;
+            margin-top: 5px;
+        }
+
+        /* Sezioni di contenuto */
+        section {
+            margin-bottom: 40px;
+            text-align: center; /* Centra il testo di default nelle sezioni */
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #5d4037;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            display: inline-block;
+            position: relative;
+        }
+
+        /* Elegante linea decorativa sotto i titoli intermedi */
+        h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #8d6e63;
+            margin: 8px auto 0 auto;
+        }
+
+        /* Elementi grafici retrò (citazione e separatore) */
+        blockquote {
+            font-style: italic;
+            background-color: #fcf9f2;
+            border-left: 3px solid #8d6e63;
+            border-right: 3px solid #8d6e63;
+            margin: 25px auto;
+            padding: 15px 20px;
+            color: #4e342e;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Separatore vintage elaborato in puro testo tipografico */
+        .divider {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 1.2em;
+            color: #8d6e63;
+            letter-spacing: 4px;
+        }
+        
+        .divider::before, .divider::after {
+            content: "————— ";
+            letter-spacing: -2px;
+            opacity: 0.5;
+        }
+        
+        .divider::after {
+            content: " —————";
+        }
+
+        /* Struttura del Catalogo Libri */
+        .catalog-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .catalog-item {
+            text-align: center;
+            max-width: 350px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #e0d5c1;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Cornice vintage per le immagini */
+        .catalog-item img {
+            max-width: 100%;
+            height: auto;
+            border: 10px solid #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .book-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #3e2723;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Elegante fregio tipografico a foglia usato come punto elenco */
+        .fregio-foglia {
+            font-size: 0.9em;
+            color: #8d6e63;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Ex Libris</h1>
+            <p class="subtitle">Tracce di un passato che non si spegne, voli pindarici e ossessioni senza tempo.</p>
+        </header>
+
+        <!-- SEZIONE CENTRATA CON SUCCESSO -->
+        <section>
+            <div class="fregio-foglia">❦</div>
+            <h2>Benvenuti</h2>
+            <p>Questa è una stanza segreta, riservata a chi ha lasciato, o sta lasciando, un'impronta indelebile, tra affetti profondi e conflitti necessari</p>
+            
+            <blockquote>
+                "Ci sono persone che entrano nella nostra vita, come pagine voltate all'improvviso: non sai cosa conterrà il capitolo successivo, ma senti che la storia è cambiata per sempre"<br>
+                 <small>Citazione</small>
+            </blockquote>
+        </section>
+
+        <!-- SEPARATORE DI LINEA RETRÒ CON FREGIO CENTRALE -->
+        <div class="divider">🙡 🙤</div>
+
+        <section>
+            <div class="fregio-foglia">🙞</div>
+            <h2 style="font-size: 1.8em; text-transform: uppercase; letter-spacing: 1px;">Registro delle Esistenze</h2>
+            <p>Una mappa di legami, dove ogni nome rappresenta un capitolo cruciale, nella storia della libraia.</p>
+            
+            <div class="catalog-container">
+                
+                <!-- Scheda Libro 1 -->
+                <div class="catalog-item">
+                    <img src="https://i.postimg.cc/7ZD2ttnP/rottura.jpg" alt="Estefan">
+                    <div class="fregio-foglia">🙘 🙚</div>
+                    <span class="book-title"> <h2>Estefan</h2><br> Scritti nel tempo antico, divisi in questo presente, sarai per sempre il mio grande amore</span>
+                </div>
+
+                <!-- Scheda Libro 2 -->
+                <div class="catalog-item">
+                    <img src="https://i.postimg.cc/ydY5hzdz/margy-Niko.jpg" alt="Copertina di Piccola Mima">
+                    <div class="fregio-foglia">🙘 🙚</div>
+                    <span class="book-title"><h2>Niko</h2><br>Custodi per vocazione, porto sicuro nella tempesta, sei il mio legame più forte</span>
+                </div>
+              
+                <!-- Scheda Libro 3 -->
+                <div class="catalog-item">
+                    <img src="https://i.postimg.cc/W1s1RhYS/margy-mason.jpg" alt="Copertina di Piccola Mima">
+                    <div class="fregio-foglia">🙘 🙚</div>
+                    <span class="book-title"><h2>Mason</h2><br>Spento il fuoco del passato, resta la brace dentro l'anima, con un amore che cambia pelle</span>
+                </div>
+                <!-- Scheda Libro 4 -->
+                <div class="catalog-item">
+                    <img src="https://i.postimg.cc/BbCR2Q5Z/margy-david.jpg" alt="Copertina di Piccola Mima">
+                    <div class="fregio-foglia">🙘 🙚</div>
+                    <span class="book-title"><h2>Davide</h2><br>Una partita spietata, dove la dialettica è la lama, e il caos inevitabile</span>
+                </div>
+ <!-- Scheda Libro 5 -->
+                <div class="catalog-item">
+                    <img src="https://i.postimg.cc/6qLtLpjZ/Margot-Alder.jpg" alt="Copertina di Piccola Mima">
+                    <div class="fregio-foglia">🙘 🙚</div>
+                    <span class="book-title"><h2>Alder</h2><br>Magia di una notte di mezza estate, ma cosa resterà dei nostri baci, quando sorgerà l'alba?</span>
+
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
